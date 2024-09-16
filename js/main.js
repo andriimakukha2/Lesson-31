@@ -7,7 +7,12 @@ getData(`/posts`)
 // #2
 import { postData } from './postData.js';
 
-postData('/posts');
+postData('/posts', {
+  name: 'New Item',
+  title: 'Update Title',
+  body: 'This is a new item',
+  userId: '1',
+});
 
 
 // #3

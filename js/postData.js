@@ -31,7 +31,7 @@ async function postData(segment, data) {
             body: JSON.stringify(data)
         });
 
-        if (response.status === 200) {
+        if (response.ok) {
             const result = await response.json();
             console.log('Success:', result);
             return result;
